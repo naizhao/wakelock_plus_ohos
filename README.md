@@ -15,6 +15,7 @@ from sleeping.
 | macOS    |         ✅          |
 | Windows  |         ✅          |
 | Linux    |         ✅          |
+| HarmonyOS (OpenHarmony) | ✅ |
 
 ## Getting started
 
@@ -25,7 +26,7 @@ To learn more about the plugin and getting started, you can view the main packag
 
 This plugin plugin uses the [federated plugins approach](https://flutter.dev/docs/development/packages-and-plugins/developing-packages#federated-plugins).  
 
-Android, iOS, macOS (via Hybrid Implementation), and Web use Platform Channels in their implementations. 
+Android, iOS, macOS (via Hybrid Implementation), HarmonyOS, and Web use Platform Channels in their implementations.
 Windows and Linux are handled through [Dart-only platform implementations](https://docs.flutter.dev/packages-and-plugins/developing-packages#dart-only-platform-implementations).  
 
 The basic API is defined using [`pigeon`](https://pub.dev/packages/pigeon). The pigeon files can be found in the [`pigeons` directory](https://github.com/fluttercommunity/wakelock_plus/tree/main/wakelock/pigeons)
@@ -35,7 +36,7 @@ The packages in this repo are the following:
 
 | Package                                                                                                                       | Implementations                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [`wakelock_plus`](https://github.com/fluttercommunity/wakelock_plus/tree/main/wakelock)                                       | Main plugin package + Android, iOS, macOS, Windows, Linux, and Web implementations |
+| [`wakelock_plus`](https://github.com/fluttercommunity/wakelock_plus/tree/main/wakelock)                                       | Main plugin package + Android, iOS, macOS, HarmonyOS, Windows, Linux, and Web implementations |
 | [`wakelock_plus_platform_interface`](https://github.com/fluttercommunity/wakelock_plus/tree/main/wakelock_platform_interface) | Basic API definition & message handling                                            |
 
 ## Contributing
@@ -50,10 +51,10 @@ That plugin was originally based on [`screen`](https://pub.dev/packages/screen).
 Specifically, the wakelock functionality was extracted into the `wakelock` plugin due to lack of 
 maintenance by the author of the `screen` plugin.  
 
-For this library, the functionality remains the 
+For this library, the functionality remains the
 same as the original plugin, but has been completely refreshed (using latest Flutter standards and
-platform integration) with support for all six platforms currently supported by Flutter 
-(Android, iOS, macOS, Windows, Linux, and Web).
+platform integration) with support for all seven platforms currently supported by Flutter
+(Android, iOS, macOS, HarmonyOS, Windows, Linux, and Web).
 
 ## Migrating from the `wakelock` Plugin
 

@@ -32,6 +32,7 @@ automatically.
 | macOS    |            ✅            |
 | Windows  |            ✅            |
 | Linux    |            ✅            |
+| HarmonyOS (OpenHarmony) |  ✅  |
 
 ## Framework and Platform Requirements
 
@@ -149,6 +150,17 @@ that require the screen to stay on are active. This can e.g. happen in the `buil
 widget.
 
 ## Platform Specific Integration Instructions
+
+### HarmonyOS
+
+The HarmonyOS implementation uses the native Window API (`window.setWindowKeepScreenOn()`) and supports:
+
+- **Minimum API Level**: API 20 (HarmonyOS NEXT 5.0)
+- **Tested up to**: API 20 (HarmonyOS 6.0)
+- **Permissions**: No additional permissions required
+- **Implementation**: Uses MethodChannel for communication between Flutter and HarmonyOS native code
+
+The implementation automatically manages the main window's screen-on state and handles the lifecycle correctly.
 
 ### Android
 

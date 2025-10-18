@@ -1,0 +1,9 @@
+{
+  "name": "wakelock_plus",
+  "version": "1.4.0",
+  "description": "WakelockPlus plugin for HarmonyOS - keeps device screen awake",
+  "main": "./src/main/ets/Index.ets",
+  "author": "Flutter Community",
+  "license": "MIT",
+  "dependencies": {}
+}
