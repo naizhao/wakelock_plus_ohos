@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "wakelock_plus",
+    "type": "har",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ]
+  }
+}
